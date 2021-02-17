@@ -2,19 +2,19 @@
 clear;echo "######################################"
 echo -e "   Auto installer Shadowsocks + ShadowsocksR\n######################################\n"
 echo "Installing, Tunggu....."
-mkdir -p /root/installer
+mkdir -p /root/ss-ssr
 url="https://github.com/Haris131/ss-ssr/raw/main"
-wget -O /root/installer/simple-obfs_0.0.5-5_aarch64_cortex-a53.ipk $url/simple-obfs_0.0.5-5_aarch64_cortex-a53.ipk -q
-wget -O /root/installer/shadowsocksr-libev_2018-03-07-d63ff863800a5645aca4309d5dd5962bd1e95543_aarch64_cortex-a53.ipk $url/shadowsocksr-libev_2018-03-07-d63ff863800a5645aca4309d5dd5962bd1e95543_aarch64_cortex-a53.ipk -q
-wget -O /root/installer/shadowsocks-libev_3.3.5-1_aarch64_cortex-a53.ipk $url/shadowsocks-libev_3.3.5-1_aarch64_cortex-a53.ipk -q
-wget -O /root/installer/mbedtls-util_2.16.2-2_aarch64_cortex-a53.ipk $url/mbedtls-util_2.16.2-2_aarch64_cortex-a53.ipk -q
-wget -O /root/installer/libsodium_1.0.18-1_aarch64_cortex-a53.ipk $url/libsodium_1.0.18-1_aarch64_cortex-a53.ipk -q
-wget -O /root/installer/libmbedtls12_2.16.2-2_aarch64_cortex-a53.ipk $url/libmbedtls12_2.16.2-2_aarch64_cortex-a53.ipk -q
-wget -O /root/installer/libev_4.27-1_aarch64_cortex-a53.ipk $url/libev_4.27-1_aarch64_cortex-a53.ipk -q
-wget -O /root/installer/libcares_1.15.0-4_aarch64_cortex-a53.ipk $url/libcares_1.15.0-4_aarch64_cortex-a53.ipk -q
-wget -O /root/installer/luci-app-shadowsocksr_1.9.1-2_all.ipk $url/luci-app-shadowsocksr_1.9.1-2_all.ipk -q
-wget -O /root/installer/luci-app-shadowsocks_1.9.1-1_all.ipk $url/luci-app-shadowsocks_1.9.1-1_all.ipk -q
-opkg install /root/installer/*.ipk
+wget -O /root/ss-ssr/simple-obfs_0.0.5-5_aarch64_cortex-a53.ipk $url/simple-obfs_0.0.5-5_aarch64_cortex-a53.ipk -q
+wget -O /root/ss-ssr/shadowsocksr-libev_2018-03-07-d63ff863800a5645aca4309d5dd5962bd1e95543_aarch64_cortex-a53.ipk $url/shadowsocksr-libev_2018-03-07-d63ff863800a5645aca4309d5dd5962bd1e95543_aarch64_cortex-a53.ipk -q
+wget -O /root/ss-ssr/shadowsocks-libev_3.3.5-1_aarch64_cortex-a53.ipk $url/shadowsocks-libev_3.3.5-1_aarch64_cortex-a53.ipk -q
+wget -O /root/ss-ssr/mbedtls-util_2.16.2-2_aarch64_cortex-a53.ipk $url/mbedtls-util_2.16.2-2_aarch64_cortex-a53.ipk -q
+wget -O /root/ss-ssr/libsodium_1.0.18-1_aarch64_cortex-a53.ipk $url/libsodium_1.0.18-1_aarch64_cortex-a53.ipk -q
+wget -O /root/ss-ssr/libmbedtls12_2.16.2-2_aarch64_cortex-a53.ipk $url/libmbedtls12_2.16.2-2_aarch64_cortex-a53.ipk -q
+wget -O /root/ss-ssr/libev_4.27-1_aarch64_cortex-a53.ipk $url/libev_4.27-1_aarch64_cortex-a53.ipk -q
+wget -O /root/ss-ssr/libcares_1.15.0-4_aarch64_cortex-a53.ipk $url/libcares_1.15.0-4_aarch64_cortex-a53.ipk -q
+wget -O /root/ss-ssr/luci-app-shadowsocksr_1.9.1-2_all.ipk $url/luci-app-shadowsocksr_1.9.1-2_all.ipk -q
+wget -O /root/ss-ssr/luci-app-shadowsocks_1.9.1-1_all.ipk $url/luci-app-shadowsocks_1.9.1-1_all.ipk -q
+opkg install /root/ss-ssr/*.ipk
 rm -rf installer
 echo -e "Shadowsocks + ShadowsocksR terinstall.\n\nSilahkan Akses via luci"
 echo "Terima kasih -salam haris setyawan."
