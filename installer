@@ -1,6 +1,6 @@
 #!/bin/bash
 clear;echo "######################################"
-echo -e "   Auto installer Shadowsocks + ShadowsocksR\n######################################\n"
+echo -e "Auto installer Shadowsocks + ShadowsocksR\n######################################\n"
 echo "Installing, Tunggu....."
 mkdir -p /root/ss-ssr
 url="https://github.com/Haris131/ss-ssr/raw/main"
